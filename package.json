@@ -5,8 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
-    "preview": "vite preview"
+    "build": "vite build",
+    "preview": "vite preview",
+    "postinstall": "lefthook install"
   },
   "dependencies": {
     "@tanstack/react-router": "^1.45.8",
@@ -17,6 +18,11 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.7.0",
+    "@iconify-json/fa": "^1.1.8",
+    "@iconify-json/material-symbols": "^1.1.85",
+    "@iconify-json/mdi": "^1.1.67",
+    "@svgr/core": "^8.1.0",
+    "@svgr/plugin-jsx": "^8.1.0",
     "@tanstack/router-devtools": "^1.45.8",
     "@tanstack/router-vite-plugin": "^1.45.8",
     "@types/react": "npm:types-react@rc",
@@ -26,8 +32,11 @@
     "@vitejs/plugin-react": "^4.3.1",
     "babel-plugin-react-compiler": "0.0.0-experimental-696af53-20240625",
     "eslint": "^9.7.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
     "eslint-plugin-react": "^7.35.0",
     "globals": "^15.8.0",
+    "lefthook": "^1.7.5",
     "postcss-preset-env": "^9.6.0",
     "prettier": "^3.3.3",
     "typescript": "^5.5.4",

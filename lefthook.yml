@@ -1,0 +1,14 @@
+pre-commit:
+  commands:
+    fix:
+      glob: "*.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx}"
+      run: pnpm exec eslint --fix {staged_files}
+      stage_fixed: true
+    format:
+      run: pnpm exec prettier -w -u {staged_files}
+      stage_fixed: true
+
+pre-push:
+  commands:
+    type:
+      run: pnpm exec tsc {push_files}

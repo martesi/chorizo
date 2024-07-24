@@ -13,7 +13,7 @@ import resolver from "unplugin-icons/resolver"
 export default defineConfig({
   envDir: ".config",
   plugins: [
-    icons({ autoInstall: true, compiler: "jsx" }),
+    icons({ compiler: "jsx" }),
     unocss(),
     tsconfigPaths(),
     envParse({ dtsPath: "src/generated/env.d.ts" }),
@@ -24,7 +24,13 @@ export default defineConfig({
       disableLogging: true,
     }),
     autoImports({
-      resolvers: [resolver({ extension: "jsx" })],
+      resolvers: [
+        resolver({
+          extension: "jsx",
+          prefix: false,
+          enabledCollections: ["mdi"],
+        }),
+      ],
       include: [/\.tsx?$/],
       imports: [
         "react",
@@ -35,21 +41,21 @@ export default defineConfig({
           "@tanstack/react-router": [
             "Link",
             "Outlet",
-            'Navigate',
+            "Navigate",
             "useParams",
-            'useLoaderDeps',
+            "useLoaderDeps",
             "useLoaderData",
             "useRouter",
-            'useNavigate',
-            'useBlocker',
-            'useSearch',
-            'useMatches',
-            'redirect',
-            'notFound',
+            "useNavigate",
+            "useBlocker",
+            "useSearch",
+            "useMatches",
+            "redirect",
+            "notFound",
           ],
         },
       ],
-      dirs: ["src/hooks"],
+      dirs: ["src/hooks", "src/components"],
       dts: "src/generated/auto-imports.d.ts",
     }),
     compress({
