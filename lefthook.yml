@@ -1,7 +1,7 @@
 pre-commit:
   commands:
     fix:
-      glob: "*.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx}"
+      glob: '*.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx}'
       run: pnpm exec eslint --fix {staged_files}
       stage_fixed: true
     format:
@@ -11,4 +11,4 @@ pre-commit:
 pre-push:
   commands:
     type:
-      run: pnpm exec tsc {push_files}
+      run: pnpm run type-check
