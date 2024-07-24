@@ -1,4 +1,4 @@
-import { UserConfig } from "unocss"
+import { UserConfig } from 'unocss'
 
 const config = {} satisfies UserConfig
 

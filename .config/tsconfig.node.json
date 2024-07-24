@@ -9,9 +9,5 @@
     "strict": true,
     "noEmit": true
   },
-  "include": [
-    "vite.config.ts",
-    "uno.config.ts",
-    "eslint.config.js"
-  ]
+  "include": ["../vite.config.ts", "../uno.config.ts", "../eslint.config.js"]
 }
