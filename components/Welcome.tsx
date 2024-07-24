@@ -1,6 +1,6 @@
 export function Welcome() {
   const time = useInitialRenderTime()
-  const [counter, setCounter] = useState(0)
+  const [show, setShow] = useState(false)
 
   return (
     <div
@@ -13,12 +13,26 @@ export function Welcome() {
         <MdiDraw className={'mr-1'} />
         Initial render at {time}
       </div>
-      <button
-        onClick={() => setCounter((v) => ++v)}
-        className={'px-4 py-2 rd-2'}
-      >
-        You clicked {counter} time(s)
+      <button onClick={() => setShow((v) => !v)} className={'px-4 py-2 rd-2'}>
+        {show ? 'Hell yeah!' : 'Do you want to see my babies?'}
       </button>
+      <div className={'flex justify-center gap-4'}>
+        {show && Array.from({ length: 2 }, (_, i) => <Child key={i} />)}
+      </div>
     </div>
   )
 }
+
+function Child() {
+  const [counter, setCounter] = useAtom(childCounter)
+  return (
+    <button
+      onClick={() => setCounter((v) => ++v)}
+      className={'px-2 py-1 rd-2 min-w-20'}
+    >
+      {counter || 'Try me'}
+    </button>
+  )
+}
+
+const childCounter = atom(0)
