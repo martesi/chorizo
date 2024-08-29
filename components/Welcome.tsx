@@ -5,7 +5,7 @@ export function Welcome() {
   return (
     <div
       className={
-        'fixed left-50% top-50% translate--50% b b-solid b-#f1e3e1 rd-4 px-6 py-4 text-center space-y-2'
+        'fixed left-50% top-50% translate--50% b b-solid b-zine-1 rd-4 px-6 py-4 text-center space-y-2 bg-#f7f8fa shadow-[5px_5px_10px_rgba(0,0,0,0.1)]'
       }
     >
       <div className={'text-12'}>🐕 Chorizo</div>
