@@ -11,57 +11,48 @@
     "type-check": "tsc -b"
   },
   "dependencies": {
-    "@tanstack/react-router": "^1.45.8",
+    "@tanstack/react-router": "^1.51.2",
     "clsx": "^2.1.1",
-    "jotai": "^2.9.1",
-    "react": "19.0.0-rc-f6cce072-20240723",
-    "react-dom": "19.0.0-rc-f6cce072-20240723"
+    "jotai": "^2.9.3",
+    "react": "canary",
+    "react-dom": "canary"
   },
   "devDependencies": {
-    "@eslint/js": "^9.7.0",
-    "@iconify-json/fa": "^1.1.8",
-    "@iconify-json/material-symbols": "^1.1.85",
-    "@iconify-json/mdi": "^1.1.67",
+    "@eslint/js": "^9.9.1",
+    "@iconify-json/fa": "^1.1.9",
+    "@iconify-json/material-symbols": "^1.1.89",
+    "@iconify-json/mdi": "^1.1.68",
     "@svgr/core": "^8.1.0",
     "@svgr/plugin-jsx": "^8.1.0",
-    "@tanstack/router-devtools": "^1.45.8",
-    "@tanstack/router-vite-plugin": "^1.45.8",
+    "@tanstack/router-devtools": "^1.51.2",
+    "@tanstack/router-vite-plugin": "^1.51.0",
     "@types/react": "npm:types-react@rc",
     "@types/react-dom": "npm:types-react-dom@rc",
-    "@unocss/eslint-config": "^0.61.5",
-    "@unocss/reset": "^0.61.5",
+    "@unocss/eslint-config": "^0.62.3",
+    "@unocss/reset": "^0.62.3",
     "@vitejs/plugin-react": "^4.3.1",
-    "babel-plugin-react-compiler": "0.0.0-experimental-696af53-20240625",
-    "eslint": "^9.7.0",
+    "babel-plugin-react-compiler": "latest",
+    "eslint": "^9.9.1",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.2.1",
     "eslint-plugin-react": "^7.35.0",
-    "globals": "^15.8.0",
-    "lefthook": "^1.7.5",
-    "postcss-preset-env": "^9.6.0",
+    "globals": "^15.9.0",
+    "lefthook": "^1.7.14",
+    "postcss-preset-env": "^10.0.2",
     "prettier": "^3.3.3",
     "typescript": "^5.5.4",
-    "typescript-eslint": "^7.17.0",
-    "unocss": "^0.61.5",
-    "unplugin-auto-import": "^0.18.1",
-    "unplugin-icons": "^0.19.0",
-    "vite": "^5.3.4",
+    "typescript-eslint": "^8.3.0",
+    "unocss": "^0.62.3",
+    "unplugin-auto-import": "^0.18.2",
+    "unplugin-icons": "^0.19.2",
+    "vite": "^5.4.2",
     "vite-plugin-compression": "^0.5.1",
     "vite-plugin-env-parse": "^1.0.15",
-    "vite-tsconfig-paths": "^4.3.2"
-  },
-  "pnpm": {
-    "overrides": {
-      "react": "$react",
-      "react-dom": "$react-dom",
-      "@types/react": "$@types/react",
-      "@types/react-dom": "$@types/react-dom",
-      "eslint": "$eslint"
-    }
+    "vite-tsconfig-paths": "^5.0.1"
   },
   "prettier": {
     "semi": false,
     "singleQuote": true
   },
-  "packageManager": "pnpm@9.6.0+sha512.38dc6fba8dba35b39340b9700112c2fe1e12f10b17134715a4aa98ccf7bb035e76fd981cf0bb384dfa98f8d6af5481c2bef2f4266a24bfa20c34eb7147ce0b5e"
+  "packageManager": "pnpm@9.9.0+sha512.60c18acd138bff695d339be6ad13f7e936eea6745660d4cc4a776d5247c540d0edee1a563695c183a66eb917ef88f2b4feb1fc25f32a7adcadc7aaf3438e99c1"
 }
