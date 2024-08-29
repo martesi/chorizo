@@ -1,30 +1,37 @@
-# React + TypeScript + Vite
+# Chorizo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Chorizo is a ~~cute dog in Far Cry 6~~ vite-based react template.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [React 19](https://react.dev/blog/2024/04/25/react-19) (Canary,
+  with [React Compiler](https://react.dev/learn/react-compiler))
+- [File based routing](https://tanstack.com/router/latest/docs/framework/react/guide/file-based-routing)
+- [Components, hooks auto importing](https://unplugin.unjs.io/showcase/unplugin-auto-import.html)
+- [State Management via Jotai](https://jotai.org/)
+- [Atomic CSS via UnoCSS](https://unocss.dev/)
+- TypeScript
 
-## Expanding the ESLint configuration
+## Pre-packed
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### UI
 
-- Configure the top-level `parserOptions` property like this:
+- [UnoCSS](https://unocss.dev/) - Atomic CSS Engine
+- [unplugin-icons](https://github.com/unplugin/unplugin-icons) - Access thousands of icons as components on-demand
+  - `@iconify-json/mdi` is installed and used in `Welcome` component as a demo, you remove it once you removed the
+    `Welcome` Component.
+  - `@svgr/core` & `@svgr/plugin-jsx` are required by `unplugin-icons`.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json', './tsconfig.app.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+### Code Style
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- [Prettier](https://prettier.io/) - No semi, single quote.
+- [ESLint](https://eslint.org/) - JS, TS, React recommendation rules + UnoCSS + Prettier
+
+### Quality of Life
+
+- [unplugin-auto-import](https://unplugin.unjs.io/showcase/unplugin-auto-import.html) - Support for components, hooks and icons auto importing.
+- [clsx](https://github.com/lukeed/clsx) - Constructing className strings conditionally.
+- [vite-plugin-compression](https://github.com/vbenjs/vite-plugin-compression) - Use gzip or brotli to compress resources.
+- [vite-plugin-env-parse](https://github.com/yue1123/vite-plugin-env-parse) - Parse env string values to correct values, automatically generate types for them.
+- [lefthook](https://github.com/evilmartians/lefthook) - Git hooks manager
+  - If you don't use `git`, you can remove this, along with the `postinstall` script in `package.json`, `lefthook.yml` in the root folder.
