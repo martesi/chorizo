@@ -26,12 +26,6 @@ importers:
       '@eslint/js':
         specifier: ^9.9.1
         version: 9.9.1
-      '@iconify-json/fa':
-        specifier: ^1.1.9
-        version: 1.1.9
-      '@iconify-json/material-symbols':
-        specifier: ^1.1.89
-        version: 1.1.89
       '@iconify-json/mdi':
         specifier: ^1.1.68
         version: 1.1.68
@@ -63,8 +57,8 @@ importers:
         specifier: ^4.3.1
         version: 4.3.1(vite@5.4.2)
       babel-plugin-react-compiler:
-        specifier: 0.0.0-experimental-696af53-20240625
-        version: 0.0.0-experimental-696af53-20240625
+        specifier: latest
+        version: 0.0.0-experimental-03b7aef-20240827
       eslint:
         specifier: ^9.9.1
         version: 9.9.1(jiti@1.21.6)
@@ -1235,18 +1229,6 @@ packages:
       }
     engines: { node: '>=18.18' }
 
-  '@iconify-json/fa@1.1.9':
-    resolution:
-      {
-        integrity: sha512-jop0FUrK3i9LxgY677ojAPFOiWc47iTwBRRSPWLwSAeKGGmMG6/PojkROvLJrMGqHAz3OvBlvDYeKJU+cpke4Q==,
-      }
-
-  '@iconify-json/material-symbols@1.1.89':
-    resolution:
-      {
-        integrity: sha512-lG/eoYGbXduksHNirl4eQ3Yh0mWX85WwmQgBjz4ebHp1g5QVfEK0W+0K83p9F0itiDXlCHcPwhFz4GHsPiCbiA==,
-      }
-
   '@iconify-json/mdi@1.1.68':
     resolution:
       {
@@ -2164,10 +2146,10 @@ packages:
         integrity: sha512-JxFi9qyRJpN0LjEbbjbN8g0ux71Qppn9R8Qe3k6QzHg2CaKsbUQtbn307LQGiDLGjV6JCtEFqfxzVig9MyDCHQ==,
       }
 
-  babel-plugin-react-compiler@0.0.0-experimental-696af53-20240625:
+  babel-plugin-react-compiler@0.0.0-experimental-03b7aef-20240827:
     resolution:
       {
-        integrity: sha512-OUDKms8qmcm5bX0D+sJWC1YcKcd7AZ2aJ7eY6gkR+Xr7PDfkXLbqAld4Qs9B0ntjVbUMEtW/PjlQrxDtY4raHg==,
+        integrity: sha512-kRDdxhj0WsL5S/IeOyx/0xbSLghFEh2kcYattEEyMfahnmrqNDo4A4SjUpJa3UA69tK7L++Xrj0igMZG2FSmRw==,
       }
 
   balanced-match@1.0.2:
@@ -5757,14 +5739,6 @@ snapshots:
 
   '@humanwhocodes/retry@0.3.0': {}
 
-  '@iconify-json/fa@1.1.9':
-    dependencies:
-      '@iconify/types': 2.0.0
-
-  '@iconify-json/material-symbols@1.1.89':
-    dependencies:
-      '@iconify/types': 2.0.0
-
   '@iconify-json/mdi@1.1.68':
     dependencies:
       '@iconify/types': 2.0.0
@@ -6503,7 +6477,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  babel-plugin-react-compiler@0.0.0-experimental-696af53-20240625:
+  babel-plugin-react-compiler@0.0.0-experimental-03b7aef-20240827:
     dependencies:
       '@babel/generator': 7.2.0
       '@babel/types': 7.25.4

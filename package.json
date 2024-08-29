@@ -19,8 +19,6 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.9.1",
-    "@iconify-json/fa": "^1.1.9",
-    "@iconify-json/material-symbols": "^1.1.89",
     "@iconify-json/mdi": "^1.1.68",
     "@svgr/core": "^8.1.0",
     "@svgr/plugin-jsx": "^8.1.0",
